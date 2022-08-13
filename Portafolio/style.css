@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'moon_lightregular';
+    src: url('/Portafolio/fonts/moonlight-webfont.woff2') format('woff2'),
+         url('/Portafolio/fonts/moonlight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    font-family: 'moon_lightregular';
+    color: rgb(182, 197, 43);
+    margin: 0;
+    padding: 0;
+    
+}
+
+.active {
+    display: inline;
+    gap: var(--gap, 1rem);
+}
+
+
+.background-image{
+     background-image: url("/Portafolio/images/background-image.avif");
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 100vh;
+     width:100vw;
+}
