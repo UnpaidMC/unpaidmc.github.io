@@ -1,25 +1,118 @@
-@font-face {
-    font-family: 'moon_lightregular';
-    src: url('/Portafolio/fonts/moonlight-webfont.woff2') format('woff2'),
-         url('/Portafolio/fonts/moonlight-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+*{
+    font-family: 'Chakra Petch', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: rgb(221, 220, 220);
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: burlywood;
 
 }
 
-* {
-    font-family: 'moon_lightregular';
-    color: rgb(182, 197, 43);
-    margin: 0;
-    padding: 0;
+.div-logo{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.barra-nav-primaria{
+    display: flex;
+    background-color: red;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.barra-nav-primaria a{
+text-decoration: none;
+letter-spacing: 3px;
+font-weight: bold;
+font-size: 15px;
+}
+
+.barra-nav-primaria li{
+    list-style: none;
+}
+
+.mobile-burger{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(221, 220, 220);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1024px) {
+    .barra-nav-primaria{
+        width: 70%;
+    }
     
 }
 
-.active {
-    display: inline;
-    gap: var(--gap, 1rem);
+@media screen and (max-width:1024px) {
+    body{
+        overflow-x: hidden;
+    }
+
+
+    .barra-nav-primaria{
+       position: absolute;
+       right: 0px;
+       height: 92vh;
+       top: 8vh;
+       background-color: burlywood;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 40%;
+       transform: translateX(100%);
+
+    }
+
+    .barra-nav-primaria li{
+        opacity: 0;
+    }
+
+    .mobile-burger{
+        display: block;
+       
+    }
 }
 
+.barra-nav-primaria-active{
+    transform: translateX(0%);
+}
+
+@keyframes fadeInBarraNav{
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: (0px);
+    }
+}
+
+.toggle .line1{
+transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
 
 .background-image{
      background-image: url("/Portafolio/images/background-image.avif");
