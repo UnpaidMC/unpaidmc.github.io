@@ -8,18 +8,20 @@
 
 body{
     overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    overflow: visible;
 }
 
 html {
     background-image: url("/Portafolio/images/background-image.avif");
-    background-size: cover 100% 100%;
+    background-size: contain 100% 100%;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     scroll-behavior: smooth;
+    margin: 0;
     
 }
-
-
 
 
 nav{
@@ -387,7 +389,6 @@ margin-right: 3em;
 
 .Projects{
     background-color: yellow;
-
     margin: 0px auto;   
     max-width: 1000px;
     display: flex;
@@ -398,22 +399,86 @@ margin-right: 3em;
     min-height: 100vh;
     padding: 0px;
 }
+
+
+
 
 /*Seccion contacto*/
 .Contact{
     background-color: turquoise;
-
     margin: 0px auto;   
     max-width: 1000px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     vertical-align: top;
     min-height: 100vh;
     padding: 0px;
+    text-align: center;
 }
 
+.contact-text-sm{
+    line-height: 1.1;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    white-space: nowrap;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.contact-text-l{
+    font-size: clamp(40px, 7vw, 78px);
+    margin: 0px 0px 10px;
+    font-weight: 600;
+    line-height: 1.1;
+    display: block;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.contact-div{
+    border: solid 1px red;
+    width: 70%;
+    
+}
+
+.contact-div p{
+    font-size: 20px;
+}
+
+
+.button {
+    
+    font-size:16px;
+    width:140px;
+    height:50px;
+    border-width:1px;
+    color:#ffffff;
+    border-color:#54381e;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    box-shadow:inset 0px 1px 0px 0px #a6827e;
+    text-shadow:inset 0px 1px 0px #54381e;
+    background:linear-gradient(#7d5d3b, #634b30);
+    padding: 1.25rem 1.75rem;
+    text-decoration: none;
+    margin-top: 50px;
+  }
+  
+  .button:hover {
+    background: linear-gradient(#634b30, #7d5d3b);
+  }
+                
 /*Seccion footer*/
 
 footer{
