@@ -12,7 +12,7 @@ const barraNavAnim = () => {
         if(link.style.animation){
             link.style.animation = '';
         } else {
-            link.style.animation = `fadeInBarraNav 0.5s ease forwards ${index/5 + 1}s`
+            link.style.animation = `fadeInBarraNav 0.5s ease forwards ${index/5 + 0.5}s`
         }
         
       });

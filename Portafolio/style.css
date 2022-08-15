@@ -6,11 +6,26 @@
     color: rgb(221, 220, 220);
 }
 
+body{
+    overflow-x: hidden;
+}
+
+html {
+    background-image: url("/Portafolio/images/background-image.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+
+
+
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 80px;
     background-color: burlywood;
 
 }
@@ -25,7 +40,7 @@ nav{
     display: flex;
     background-color: red;
     justify-content: space-around;
-    width: 30%;
+    width: 40%;
 }
 
 .barra-nav-primaria a{
@@ -114,10 +129,95 @@ transform: rotate(-45deg) translate(-5px, 6px);
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-.background-image{
-     background-image: url("/Portafolio/images/background-image.avif");
-     background-size: cover;
-     background-repeat: no-repeat;
-     height: 100vh;
-     width:100vw;
+
+/*Main style*/
+
+.intro{
+
+    background-color: red;
+    margin: 0px auto;   
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    vertical-align: top;
+    min-height: 100vh;
+    padding: 0px;
+    
+}
+
+
+
+.div-intro1{
+    
+    margin: 0 0 30px 4px;
+    font-size: 16px;
+    margin-left: 5px;
+    color: black;   
+    background-color: rgb(251, 255, 0);
+}
+
+.div-intro1 h1{
+    margin-top: -85%;
+}
+
+
+.div-intro2 h2{
+margin-top: -15%;
+    font-size: clamp(40px, 8vw, 80px);
+    color: black;
+
+}
+
+
+.div-intro3 h3{
+    
+    font-size: clamp(40px, 8vw, 80px);
+    color: black;
+
+}
+
+
+
+.div-intro4 p{
+    margin: 20px 0 0;
+    max-width: 540px;
+    color: black;
+    font-size: 20px;
+
+}
+
+.About-me{
+    background-color: green;
+    margin: 0px auto;   
+    max-width: 1000px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 0px;
+}
+
+.Skills{
+    background-color: purple;
+    padding: 2em;
+}
+
+.Projects{
+    background-color: yellow;
+    padding: 2em;
+}
+
+.Contact{
+    background-color: turquoise;
+    padding: 2em;
+}
+
+footer{
+    background-color: brown;
+    padding: 2em;
 }
