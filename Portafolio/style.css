@@ -12,9 +12,10 @@ body{
 
 html {
     background-image: url("/Portafolio/images/background-image.avif");
-    background-size: cover;
+    background-size: cover 100% 100%;
     background-repeat: no-repeat;
     height: 100vh;
+    scroll-behavior: smooth;
     
 }
 
@@ -252,28 +253,168 @@ margin-top: -15%;
     padding: 0px;
 }
 
+.Skills h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 10px 0 40px;
+    width: 100%;
+    font-size: clamp(26px, 5vw,32px);
+    white-space: nowrap;
+    background-color: green;
+}
+
+.sk-front-list ul{
+    font-size: 38px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.sk-front-list ul > li{
+background-repeat: no-repeat;
+background-position: 0.2em;
+padding-left: 1.6em;
+margin-right: 3em;
+}
+
+.inner2{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-gap: 50px;
+    width: 100%;
+}
+
+.sk-front{
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+
+.sk-front-title{
+    border: solid 1px yellow;
+    width: 100%;
+    height: 10em;
+}
+
+.sk-front-list{
+    border: solid 1px red;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    
+}
+
+.html-icon{
+    background-image: url("/Portafolio/images/html5.png");
+}
+.CSS3-icon{
+    background-image: url("/Portafolio/images/css3.png");
+}
+.JS-icon{
+    background-image: url("/Portafolio/images/javascript.png");
+}
+.react-icon{
+    background-image: url("/Portafolio/images/react.png");
+}
+.typescript-icon{
+    background-image: url("/Portafolio/images/typescript.png");
+}
+
+.sk-back{
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+
+.sk-back-title{
+    border: solid 1px yellow;
+    width: 100%;
+    height: 10em;
+}
+
+.sk-back-list{
+    border: solid 1px red;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.sk-back-list ul{
+    font-size: 38px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;}
+
+.sk-back-list ul > li{
+    background-repeat: no-repeat;
+    background-position: 0.2em;
+    padding-left: 1.6em;
+    }
+
+.node-icon{
+    background-image: url("/Portafolio/images/nodejs.png");
+}
+
+.java-icon{
+    background-image: url("/Portafolio/images/java.png");
+}
+
+.sql-icon{
+    background-image: url("/Portafolio/images/mysql.png");
+}
+
+.python-icon{
+    background-image: url("/Portafolio/images/python.png");
+}
+
+.springboot-icon{
+    background-image: url("/Portafolio/images/Spring-Boot.png");
+}
 
 
-
-
-
-
-
-
-
-
-
+/*Seccion proyecto*/
 
 
 .Projects{
     background-color: yellow;
-    padding: 2em;
+
+    margin: 0px auto;   
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    vertical-align: top;
+    min-height: 100vh;
+    padding: 0px;
 }
 
+/*Seccion contacto*/
 .Contact{
     background-color: turquoise;
-    padding: 2em;
+
+    margin: 0px auto;   
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    vertical-align: top;
+    min-height: 100vh;
+    padding: 0px;
 }
+
+/*Seccion footer*/
 
 footer{
     background-color: brown;
