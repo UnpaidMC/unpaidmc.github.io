@@ -7,6 +7,8 @@
 }
 
 body{
+    --nav-height: 80px;
+    
     overflow-x: hidden;
     height: 100%;
     margin: 0;
@@ -25,17 +27,23 @@ html {
 
 
 nav{
+
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 80px;
+    min-height: var(--nav-height);
     background-color: #d6e2d669;
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     position: fixed;
     top: 0px;
     width: 100%;
+    transition: transform 0.5s;
 
+}
+
+.barra-nav--hidden{
+    transform: translateY(calc(-1*var(--nav-height)));
 
 }
 
@@ -93,8 +101,8 @@ font-size: 15px;
        position: absolute;
        right: 0px;
        height: 92vh;
-       top: 8vh;
-       background-color: burlywood;
+       top: 80px;
+       background-color: #d6e2d669;
        display: flex;
        flex-direction: column;
        align-items: center;
@@ -145,7 +153,7 @@ transform: rotate(-45deg) translate(-5px, 6px);
 
 .intro{
 
-    background-color: red;
+    
     margin: 0px auto;   
     max-width: 1000px;
     display: flex;
@@ -165,27 +173,26 @@ transform: rotate(-45deg) translate(-5px, 6px);
     margin: 0 0 30px 4px;
     font-size: 16px;
     margin-left: 5px;
-    color: black;   
-    background-color: rgb(251, 255, 0);
+
 }
 
 .div-intro1 h1{
     margin-top: -85%;
+    color: #e6f1ff;
 }
 
 
 .div-intro2 h2{
 margin-top: -15%;
     font-size: clamp(40px, 8vw, 80px);
-    color: black;
-
+    color: #ccd6f6;
 }
 
 
 .div-intro3 h3{
     
     font-size: clamp(40px, 8vw, 80px);
-    color: black;
+    color: #8892b0;
 
 }
 
@@ -194,8 +201,9 @@ margin-top: -15%;
 .div-intro4 p{
     margin: 20px 0 0;
     max-width: 540px;
-    color: black;
+    color: #e6f1ff;
     font-size: 20px;
+    background-color: #01476052;
 
 }
 
@@ -224,12 +232,14 @@ margin-top: -15%;
     width: 100%;
     font-size: clamp(26px, 5vw,32px);
     white-space: nowrap;
-    background-color: green;
+    background-color: #d6e2d669;
 }
 
 .am-parrafos p{
     margin: 0px 0px 15px;
-    background-color: green;
+    background-color: #01476052;
+    color: #e6f1ff;
+    font-size: 16px;
 }
 
 .inner{
@@ -249,7 +259,7 @@ margin-top: -15%;
 
 
 .Skills{
-    background-color: purple;
+    
     margin: 0px auto;   
     max-width: 1000px;
     display: flex;
@@ -270,7 +280,7 @@ margin-top: -15%;
     width: 100%;
     font-size: clamp(26px, 5vw,32px);
     white-space: nowrap;
-    background-color: green;
+    background-color:#d6e2d669;
 }
 
 .sk-front-list ul{
@@ -296,7 +306,7 @@ margin-right: 3em;
 }
 
 .sk-front{
-    border: solid 1px black;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -305,13 +315,13 @@ margin-right: 3em;
 }
 
 .sk-front-title{
-    border: solid 1px yellow;
+
     width: 100%;
-    height: 10em;
+    height: 7em;
 }
 
 .sk-front-list{
-    border: solid 1px red;
+
     height: 100%;
     width: 100%;
     display: grid;
@@ -336,7 +346,7 @@ margin-right: 3em;
 }
 
 .sk-back{
-    border: solid 1px black;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -345,13 +355,13 @@ margin-right: 3em;
 }
 
 .sk-back-title{
-    border: solid 1px yellow;
+
     width: 100%;
-    height: 10em;
+    height: 7em;
 }
 
 .sk-back-list{
-    border: solid 1px red;
+
     height: 100%;
     display: grid;
     place-content: center;

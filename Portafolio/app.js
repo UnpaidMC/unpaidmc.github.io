@@ -1,3 +1,16 @@
+const barraHide = () => {
+  const nav = document.querySelector('.barra-nav')
+  let lastPosition = window.scrollY;
+window.addEventListener("scroll", () =>{
+  if (lastPosition < window.scrollY) {
+    nav.classList.add("barra-nav--hidden")
+  } else {
+    nav.classList.remove("barra-nav--hidden")
+  }
+  lastPosition = window.scrollY;
+})}
+
+
 
 const barraNavAnim = () => {
     const mobileBurger = document.querySelector('.mobile-burger');
@@ -20,4 +33,6 @@ const barraNavAnim = () => {
     });
 }
 
+
 barraNavAnim();
+barraHide();
