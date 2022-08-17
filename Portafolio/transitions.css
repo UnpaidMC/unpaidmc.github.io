@@ -1,0 +1,33 @@
+@keyframes fadeInBelow{
+    from{
+        opacity: 0.01;
+        transform: translateY(20px);
+        }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.div-intro1{
+    animation: fadeInBelow .5s;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.div-intro2{
+    animation: fadeInBelow .75s;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.div-intro3{
+    animation: fadeInBelow 1s;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.div-intro4{
+    animation: fadeInBelow 1.25s;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+
+

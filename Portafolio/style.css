@@ -191,7 +191,7 @@ margin-top: -15%;
 
 .div-intro3 h3{
     
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(40px, 8vw, 77px);
     color: #8892b0;
 
 }
@@ -485,7 +485,7 @@ margin-right: 3em;
 
 .contact-div p{
     font-size: 20px;
-    color: black;
+    color: #e6f1ff;
     
 }
 
@@ -505,6 +505,7 @@ margin-right: 3em;
     -moz-border-radius:5px 5px 5px 5px;
     -webkit-border-radius:5px 5px 5px 5px;
     width:170px;
+    text-decoration: none;
 }
   
   .button:hover {
