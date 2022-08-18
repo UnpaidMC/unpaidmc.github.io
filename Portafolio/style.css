@@ -8,21 +8,20 @@
 
 body{
     --nav-height: 80px;
-    
     overflow-x: hidden;
     height: 100%;
     margin: 0;
     overflow: visible;
+    height: 100vh;
 }
 
 html {
     background-image: url("/Portafolio/images/background-image.avif");
-    background-size: contain 100% 100%;
+    background-size: cover 100% 100%;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 100vh;
     scroll-behavior: smooth;
     margin: 0;
-    
 }
 
 
@@ -44,7 +43,6 @@ nav{
 
 .barra-nav--hidden{
     transform: translateY(calc(-1*var(--nav-height)));
-
 }
 
 .div-logo{
@@ -55,16 +53,15 @@ nav{
 
 .barra-nav-primaria{
     display: flex;
-
     justify-content: space-around;
     width: 40%;
 }
 
 .barra-nav-primaria a{
-text-decoration: none;
-letter-spacing: 3px;
-font-weight: bold;
-font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .barra-nav-primaria li{
@@ -305,10 +302,10 @@ margin-top: -15%;
 }
 
 .sk-front-list ul > li{
-background-repeat: no-repeat;
-background-position: 0.2em;
-padding-left: 1.6em;
-margin-right: 3em;
+    background-repeat: no-repeat;
+    background-position: 0.2em;
+    padding-left: 1.6em;
+    margin-right: 3em;
 }
 
 .inner2{
@@ -420,7 +417,6 @@ margin-right: 3em;
 
 
 .Projects{
-    background-color: yellow;
     margin: 0px auto;   
     max-width: 1000px;
     display: flex;
@@ -432,7 +428,106 @@ margin-right: 3em;
     padding: 0px;
 }
 
+.Projects h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0px 0 100px;
+    width: 100%;
+    font-size: clamp(26px, 5vw,32px);
+    white-space: nowrap;
+    background-color:#d6e2d669;
+}
 
+.proyect-wrapper{
+    position: relative;
+    display: grid;
+    gap: 0px;
+    width: 100%;
+    height: 65vh;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.imagen-wrapper{
+    width: 580px;
+    height: 365px;
+}
+
+.imagen-proyecto{
+    border: solid 1px #192e52;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 580px;
+    height: 365px;
+    position: absolute;
+    inset: 20px;
+    z-index: 3;
+    border-radius: 4px;
+    background-image: url("/Portafolio/images/sem-demo4.png");
+    background-repeat: no-repeat;
+}
+
+
+.info-proyecto{
+    display: inline;
+    text-align: right;
+    border: solid 1px red;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+.info-proyecto h3{
+    margin-top: 1em;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.info-parra{
+
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    background-color: #192e52;
+    z-index: 5;
+    border-radius: 4px 4px 0px 4px;
+    padding: 25px;
+    text-decoration: none;
+    color: #a8b2d1;
+    
+}
+
+.technologies-used{
+    
+    background-color: #192e52;
+    position: absolute;
+    
+    right: 0;
+    bottom: 16%;
+    width: 45%;
+    z-index: 5;
+    border-radius: 0px 0px 4px 4px;
+    text-align: right;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 6px;
+}
+
+.lista-tecnologias{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista-tecnologias li{
+    list-style: none;
+    display: inline; 
+    text-decoration: none;   
+}
 
 
 /*Seccion contacto*/
