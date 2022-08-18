@@ -12,14 +12,14 @@ body{
     height: 100%;
     margin: 0;
     overflow: visible;
-    height: 100vh;
+
 }
 
 html {
     background-image: url("/Portafolio/images/background-image.avif");
     background-size: cover 100% 100%;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     scroll-behavior: smooth;
     margin: 0;
 }
