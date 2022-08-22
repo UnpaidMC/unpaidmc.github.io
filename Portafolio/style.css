@@ -508,13 +508,13 @@ margin-top: -15%;
     right: 0;
     background-color: #192e52;
     z-index: 5;
-    border-radius: 4px 4px 0px 4px;
+    border-radius: 4px 4px 4px 4px;
     padding: 25px;
     text-decoration: none;
     color: #a8b2d1;
     text-align: justify;
     text-justify: inter-word;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .technologies-used{
@@ -524,6 +524,7 @@ margin-top: -15%;
     right: 0;
     bottom: 0;
     width: 100%;
+    border-radius: 4px 4px 4px 4px;
     z-index: 5;
     text-align: right;
     font-size: 14px;
