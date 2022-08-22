@@ -515,6 +515,12 @@ margin-top: -15%;
     text-align: justify;
     text-justify: inter-word;
     font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.info-parra p{
+    margin-bottom: 55px;
 }
 
 .technologies-used{
